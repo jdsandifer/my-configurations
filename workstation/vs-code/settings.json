@@ -18,10 +18,12 @@
 
     // So live previews are only triggered on purpose:
     "files.autoSave": "off",
+    "editor.formatOnType": false,
     "editor.formatOnSave": false,
+    "javascript.format.enable": false,
 
     "prettier.semi": false,
     "prettier.singleQuote": true,
-    "prettier.eslintIntegration": false,
+    "prettier.eslintIntegration": true,
     "prettier.tabWidth": 4
 }
