@@ -1,0 +1,12 @@
+{
+    "asi": true,
+    "browser": true,
+    "devel": true,
+    "esversion": 6,
+    "jquery": true,
+    "qunit": true,
+    "undef": true,
+    "unused": true,
+    "globals": {
+    }
+}
