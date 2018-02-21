@@ -1,0 +1,26 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": false,
+        "es6": true,
+        "node": false,
+        "jquery": true,
+        "qunit": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": false
+        },
+        "sourceType": "script"
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-console": "error",
+        "no-this-before-super": "error",
+        "no-undef": "off",
+        "no-unreachable": "error",
+        "no-unused-vars": "error",
+        "constructor-super": "error",
+        "valid-typeof": "error"
+    }
+}
