@@ -1,29 +1,29 @@
-// JD's current Visual Studio Code settings
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 0,
-
+    // Look of the editor
     "editor.fontFamily": "'Fira Code', Consolas",
     "editor.fontLigatures": true,
-    "editor.rulers": [80, 100],
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [80, 120],
     "editor.wordWrap": "on",
-    "editor.wordWrapColumn": 90,
+    "editor.wordWrapColumn": 100,
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "material-icon-theme",
 
+    // Indentation
     "editor.autoIndent": true,
     "editor.detectIndentation": false,
+    "editor.tabSize": 4,
 
+    // Auto stuff
     "editor.acceptSuggestionOnEnter": "smart",
     "editor.quickSuggestionsDelay": 500,
     "editor.parameterHints": false,
 
-    // So live previews are only triggered on purpose:
-    "files.autoSave": "off",
+    // Formatting
     "editor.formatOnType": false,
     "editor.formatOnSave": false,
     "javascript.format.enable": false,
 
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
-    "prettier.eslintIntegration": true,
-    "prettier.tabWidth": 4
+    // So live previews are only triggered on purpose:
+    "files.autoSave": "off",
 }
