@@ -25,5 +25,5 @@
     "javascript.format.enable": false,
 
     // So live previews are only triggered on purpose:
-    "files.autoSave": "off",
+    "files.autoSave": "off"
 }
