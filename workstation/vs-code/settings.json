@@ -16,9 +16,20 @@
     "editor.tabSize": 4,
 
     // Auto stuff
-    "editor.acceptSuggestionOnEnter": "smart",
-    "editor.quickSuggestionsDelay": 500,
-    "editor.parameterHints": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.hover.delay": 500,
+    "editor.hover.enabled": true,
+    "editor.hover.sticky": false,
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    },
+    "editor.quickSuggestionsDelay": 2000,
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.foldingStrategy": "indentation","editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;'\",.<>/?",
 
     // Formatting
     "editor.formatOnType": false,
@@ -26,5 +37,12 @@
     "javascript.format.enable": false,
 
     // So live previews are only triggered on purpose:
-    "files.autoSave": "off"
+    "files.autoSave": "off",
+    "git.ignoreMissingGitWarning": true,
+    "explorer.confirmDelete": false,
+    "php.suggest.basic": false,
+    "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+
+    //PHP
+    //"php.validate.executablePath": ""
 }
