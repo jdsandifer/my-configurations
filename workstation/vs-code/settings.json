@@ -1,20 +1,29 @@
 {
     /* Look (theme) */
-    "editor.fontFamily": "'Fira Code'",
+    "editor.fontFamily": "'Fira Code', Inconsolata, Consolas, 'Courier New', monospace",
     "editor.fontSize": 14,
     "material-icon-theme.activeIconPack": "react_redux",
     "vscode_custom_css.imports": [ "file:///G:/synthwave84.css" ],
     "vscode_custom_css.policy": true,
     "window.zoomLevel": 0,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": true,
     "workbench.colorTheme": "SynthWave '84",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+      "editorRuler.foreground": "#aa8822",
+    },
 
     /* Functionality (editor settings) */
+    "editor.autoIndent": true,
+    "editor.detectIndentation": true,
     "editor.foldingStrategy": "indentation",
     "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [80, 100],
-    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;'\",.<>/?",
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\:|;'\",.<>/?",
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 90,
 
@@ -22,21 +31,23 @@
     "editor.detectIndentation": false,
     
     /* Autocomplete and Suggestions */
-    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnEnter": "on",
     "editor.autoClosingBrackets": "beforeWhitespace",
     "editor.autoClosingQuotes": "beforeWhitespace",
-    "editor.hover.delay": 500,
+    "editor.hover.delay": 250,
     "editor.hover.enabled": true,
-    "editor.hover.sticky": false,
-    "editor.parameterHints.enabled": false,
+    "editor.hover.sticky": true,
+    "editor.parameterHints.enabled": true,
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": false
+      "strings": true
     },
-    "editor.quickSuggestionsDelay": 2000,
+    "editor.quickSuggestionsDelay": 10,
+    "emmet.triggerExpansionOnTab": true,
 
     /* Code Formatting */
+    "editor.formatOnPaste": true,
     "editor.formatOnType": false,
     "javascript.format.enable": false,
     "prettier.semi": false,
@@ -59,4 +70,27 @@
 
     /* Terminal */
     "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+
+    /* Cmder */
+    "terminal.integrated.shell.windows": "cmd.exe",
+    "terminal.integrated.env.windows": {
+        "CMDER_ROOT": "C:\\apps\\cmder"
+    },
+    "terminal.integrated.shellArgs.windows": [
+        "/k C:\\apps\\cmder\\vendor\\init.bat"
+    ],
+
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "explorer",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.heatmap.toggleMode": "window",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.enableSmartCommit": true,
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
 }
