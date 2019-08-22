@@ -1,0 +1,103 @@
+{
+	"TSClass Arrow Function": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "afc",
+		"body": [
+			"${1:functionName} = () => {",
+			"\t$0",
+			"}"
+		],
+		"description": "Class Arrow Function"
+	},
+	"TSImport": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "imp",
+		"body": [
+			"import $1 from '$2';"
+		],
+		"description": "import"
+	},
+	"TSReact Container": {
+		"scope": "typescriptreact",
+		"prefix": "rco",
+		"body": [
+			"import { connect } from 'react-redux';",
+			"",
+			"const mapStateToProps = (state: RootState) => ({",
+			"});",
+			"",
+			"const mapDispatchToProps = {",
+			"};",
+			"",
+			"const Connected${1:path}${TM_FILENAME_BASE} = connect(mapStateToProps, mapDispatchToProps)(${1:path}${TM_FILENAME_BASE});",
+			"",
+			"export default Connected${1:path}${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "TSReact Container"
+	},
+	"TSReact Component": {
+		"scope": "typescriptreact",
+		"prefix": "rfc",
+		"body": [
+			"import React from 'react';",
+			"import LOCALE_STRINGS from '../../common/constants/localeStrings/index';",
+			"",
+			"export interface I${1:pathToComponent}${TM_FILENAME_BASE}Props { }",
+			"export interface I${1:pathToComponent}${TM_FILENAME_BASE}StateProps { }",
+			"export interface I${1:pathToComponent}${TM_FILENAME_BASE}DispatchProps { }",
+			"",
+			"type Props =",
+			"  & I${1:pathToComponent}${TM_FILENAME_BASE}Props",
+			"  & I${1:pathToComponent}${TM_FILENAME_BASE}StateProps",
+			"  & I${1:pathToComponent}${TM_FILENAME_BASE}DispatchProps;",
+			"",
+			"const ${1:pathToComponent}${TM_FILENAME_BASE}: React.FC<Props> = (props) => {",
+			"  return (",
+			"    $0",
+			"  );",
+			"};",
+			"",
+			"export default ${1:pathToComponent}${TM_FILENAME_BASE};"
+		],
+		"description": "Component"
+	},
+	"TSReact Callback Hook": {
+		"scope": "typescriptreact",
+		"prefix": "ruc",
+		"body": [
+			"useCallback(",
+			"\t$0,",
+			"[${1:dependencies}]);"
+		],
+		"description": "Callback Hook"
+	},
+	"TSReact Effect Hook": {
+		"scope": "typescriptreact",
+		"prefix": "rue",
+		"body": [
+			"useEffect(() => {",
+			"\t$0",
+			"}, [${1:dependencies}]);"
+		],
+		"description": "Effect Hook"
+	},
+	"TSReact Memo Hook": {
+		"scope": "typescriptreact",
+		"prefix": "rum",
+		"body": [
+			"useMemo(() => {",
+			"\t$0",
+			"}, [${1:dependencies}]);"
+		],
+		"description": "Memo Hook"
+	},
+	"TSReact State Hook": {
+		"scope": "typescriptreact",
+		"prefix": "rus",
+		"body": [
+			"const [${1:state}, set${1:state}] = useState(${2:intitial state});"
+		],
+		"description": "State Hook"
+	},
+}
