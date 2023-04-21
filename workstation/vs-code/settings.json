@@ -26,9 +26,6 @@
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\:|;'\",.<>/?",
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 90,
-
-    "editor.autoIndent": true,
-    "editor.detectIndentation": false,
     
     /* Autocomplete and Suggestions */
     "editor.acceptSuggestionOnEnter": "on",
